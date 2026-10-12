@@ -31,12 +31,13 @@
       margin-top: 0.5rem;
     }
 
+    
     main{
       max-width: 750px;
       margin: 0 auto;
       padding: 1rem;
     }
-
+    
     nav a{
       display: inline-block;
       padding: 1rem;
@@ -46,12 +47,12 @@
       text-decoration: none;
       border: 2px solid blue;
     }
-
+    
     nav a:hover{
       background-color: #0d47a1;
       color:white;
     }
-
+    
     header{
       position: sticky;
       top: 0;
@@ -60,8 +61,35 @@
       color: white;
       padding: 1rem;
     }
+    
     header h1{
       margin: 0;
+    }
+    
+    .has-badge{
+      position: relative;
+    }
+    
+    .badge{
+      position: absolute;
+      top:0.75rem;
+      right:0.75rem;
+      background-color: #0fe;
+      color:#202;
+      padding: 0.5rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #202;
+    }
+
+    .to-top{
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background-color: #1565c0;
+      color: #ffffff;
+      padding: 0.25rem 0.5rem;
+      text-decoration: none;
+      border-radius: 5px;
     }
 
   </style>
@@ -84,30 +112,32 @@
       <h2>Card Two</h2>
       <p>We will use cards to learn padding, border, and margin.</p>
     </div>
-    <div class="card">
-      <h2>Card One</h2>
+    <div class="card has-badge">
+      <span class="badge">NEW</span>
+      <h2>Card Three</h2>
       <p>A card is a box with a heading and some text.</p>
     </div>
     <div class="card">
-      <h2>Card Two</h2>
+      <h2>Card Four</h2>
       <p>We will use cards to learn padding, border, and margin.</p>
     </div>
     <div class="card">
-      <h2>Card One</h2>
+      <h2>Card Five</h2>
       <p>A card is a box with a heading and some text.</p>
     </div>
     <div class="card">
-      <h2>Card Two</h2>
+      <h2>Card Six</h2>
       <p>We will use cards to learn padding, border, and margin.</p>
     </div>
     <div class="card">
-      <h2>Card One</h2>
+      <h2>Card Seven</h2>
       <p>A card is a box with a heading and some text.</p>
     </div>
     <div class="card">
-      <h2>Card Two</h2>
+      <h2>Card Eight</h2>
       <p>We will use cards to learn padding, border, and margin.</p>
     </div>
   </main>
+    <a href="#" class="to-top">back to top</a>
 </body>
 </html>

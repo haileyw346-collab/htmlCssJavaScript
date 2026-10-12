@@ -1,13 +1,48 @@
+*{
+    /* outline: 2px dashed #ff0000; */
+    box-sizing: border-box;
+}
+
+#promo video{
+    border: 5px solid;
+    border-radius: 5px;
+    width: 100%;
+    max-width: fit-content;
+    max-height: fit-content;
+}
 body {
     font-family: "Dongle", sans-serif;
     font-size: 2rem;
-    background-color: #c2f6ff;
-    color:#190f2b;
+    margin: 0;
+}
+
+main{
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header, footer{
+    padding: 1rem 2rem;
+    border-bottom: 5px solid;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+article{
+    margin-bottom: 2rem;
+    border: 3px dashed;
 }
 
 h1{
     text-align: center;
     font-size: 4rem;
+    margin-top: 0rem;
+    margin-bottom: 0;
 }
 
 h2{
@@ -15,29 +50,91 @@ h2{
     font-size: 3rem;
 }
 
+h3{
+    margin: 0;
+}
+
 nav a{
-    color: #001986;
     text-decoration: none;
-}
-
-table, th, td{
-    border: 5px solid #120033;
-    border-collapse: collapse;
-}
-
-#promo video{
-    border: 5px solid #120033;
-    border-radius: 5px;
-    width: 100%;
-    max-width: fit-content;
-    max-height: fit-content;
-}
-
-th{
-    background-color:#1aabff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border: 5px solid;
+    border-radius: 4px;
 }
 
 table img{
     max-width: 250px;
     height:auto;
+}
+
+table, th, td{
+    border:  3px solid;
+    border-spacing: 0;
+}
+
+th, td{
+    padding: 0.5rem 1rem;
+}
+
+table{
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+button{
+    position: absolute;
+    top: 1rem;
+    right:1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid;
+    border-radius: 4px;
+}
+
+body#light, #dark header{
+    background-color: #75dfff;
+    color: #001986;
+    border-color: #00a6e7;
+}
+
+
+#light nav a, #dark nav a:hover, #dark button{
+    background-color:#766cff;
+    color: #001986;
+}
+
+#light table, #light th, #light td, #light #promo video{
+    border-color: #001986;
+}
+
+#light th{
+    background-color:#1aabff;
+}
+
+#light td{
+    background-color:#49bcff;
+}
+
+body#dark, #light header{
+    background-color: #00032e;
+    color:#1fccd8;
+    border-color: #001986;
+}
+
+#dark nav a, #light nav a:hover, #light button{
+    background-color: #71cbff;
+    color: #006c8d;
+}
+
+#dark table, #dark th, #dark td, #dark #promo video{
+    border-color: #002bb9;
+}
+
+#dark th{
+    background-color:#2803ac;
+}
+
+#dark td{
+    background-color: #1d167e;
 }
