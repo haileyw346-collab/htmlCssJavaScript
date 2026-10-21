@@ -31,6 +31,15 @@ header{
     position: sticky;
     top: 0;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header nav{
+    display: flex;
+    gap: 1rem;
 }
 
 article{
@@ -83,14 +92,35 @@ table{
 }
 
 button{
-    position: absolute;
-    top: 1rem;
-    right:1rem;
+    position: fixed;
     width: 3rem;
     height: 3rem;
     border: 5px solid;
     border-radius: 4px;
     cursor: pointer;
+    z-index: 11;
+    top: 1rem;
+}
+
+.mode {
+    right:1rem;
+}
+
+.hide {
+    left:1rem;
+}
+
+
+@media (max-width: 785px){
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    header nav {
+        flex-wrap:wrap;
+        align-items: center;
+    }
 }
 
 body#light, #dark header{
