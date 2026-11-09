@@ -14,14 +14,15 @@ Type your answers on the blank line under each **Answer:**, or fix the code insi
 
 | Step | Name | What happens |
 |---|---|---|
-| 1 | | |
-| 2 | | |
-| 3 | | |
+| 1 | crawl | Programs folow links to find new pages |
+| 2 | index | The engine stores what the found pages are about |
+| 3 | rank | The pages that match a search are ranked and he best ones are shown first |
 
 **b.** You just built a new page, but **no other page links to it**. Why might a search engine have trouble finding it? (Hint: think about how crawlers find pages.)
 
 **Answer:**
 
+    There is no way for the crawler to get to the page.
 
 ## 2. Organic vs. paid
 
@@ -29,11 +30,14 @@ Type your answers on the blank line under each **Answer:**, or fix the code insi
 
 **Answer:**
 
+    the paid results are the ones that say sponsored, and the ones that don't are organic.
+    SEO can only help with organic results.
 
 **d.** A business owner asks, "Why would I spend time on SEO when I could just pay for ads?" Give one reason SEO is still worth it.
 
 **Answer:**
 
+    Most people skip the ads.
 
 ## 3. Fix the head
 
@@ -49,13 +53,18 @@ This is the `<head>` of a bakery's home page. It works, but it is weak for SEO.
 **e.** Rewrite it below. Add a strong `<title>`, a meta description, and the viewport meta tag. Make up a name and town for the bakery.
 
 ```html
-
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery in _ _ |</title>
+  <meta name="description" content="">
+</head>
 ```
 
 **f.** Where does the text in your `<title>` show up? Where does the meta description usually show up?
 
 **Answer:**
+
 
 
 ## 4. Fix the page
@@ -64,14 +73,15 @@ This is the `<head>` of a bakery's home page. It works, but it is weak for SEO.
 
 ```html
 <img src="IMG_4471.jpg" alt="picture">
-<a href="page3.html">Click here</a> to see our menu.
+<a href="page3.html">Click here</a>see our menu.
 ```
 
 Your fixed version:
 
 ```html
-
-
+<img src="IMG_4471.jpg" alt="picture">
+<!--I can't fix the alt text if I don't know what the picture is-->
+<a href="menu.html">View our menu.</a>
 ```
 
 **h.** A page has three `<h1>` tags: one for the logo, one for the page title, and one for the footer. What is wrong, and how should the headings be set up?
@@ -89,10 +99,17 @@ What is this called? What will a search engine do about it? Rewrite it as a good
 
 **Answer:**
 
+    It's called Keyword stuffing and search engines treat it as spam.
+
+    content="Many shoes avaliable for a low price."
 
 **j.** Name **two** SEO choices that also help people who use screen readers. Explain how each one helps both.
 
 **Answer:**
+
+    Good Alt text - helps both search engines and people with screen readers identify what the image is.
+
+    Propper heading order - make the page easier to navigate for both groups.
 
 
 ## 6. Your own site

@@ -14,17 +14,18 @@ Type your answers on the blank line under each **Answer:**, or fill in the table
 
 | Situation | Protocol |
 |---|---|
-| You type `example.com` and your computer needs its IP address | |
-| You upload your website's files to a web host | |
-| You log in to your bank's website | |
-| A server sends a plain web page to your browser | |
-| Packet 7 of a file never arrived, so it gets sent again | |
-| Each packet needs an address so it reaches the right computer | |
-| You upload files to a server and want the transfer encrypted | |
+| You type `example.com` and your computer needs its IP address | DNS |
+| You upload your website's files to a web host | FTP |
+| You log in to your bank's website | HTTPS |
+| A server sends a plain web page to your browser | HTTP |
+| Packet 7 of a file never arrived, so it gets sent again | TCP |
+| Each packet needs an address so it reaches the right computer | IP |
+| You upload files to a server and want the transfer encrypted | SFTP |
 
 **b.** In your own words, what is a protocol? Give an example from everyday life of two people following the same "rules" so they understand each other.
 
 **Answer:**
+
 
 
 ## 2. IP addresses and DNS
@@ -33,15 +34,16 @@ Type your answers on the blank line under each **Answer:**, or fill in the table
 
 | Address | Valid? | Reason |
 |---|---|---|
-| `192.168.0.1` | | |
-| `10.0.300.5` | | |
-| `172.16.4` | | |
-| `8.8.8.8` | | |
+| `192.168.0.1` | Valid |  |
+| `10.0.300.5` | Not valid | 300 is to big, max number is 255 |
+| `172.16.4` | Not valid | it only has 3 numbers |
+| `8.8.8.8` | Valid |  |
 
 **d.** DNS is called the internet's "phone book." Explain why that comparison makes sense.
 
 **Answer:**
 
+    It has the phone number (IP adress) for each name (URL).
 
 ## 3. Packets
 
@@ -56,19 +58,23 @@ Type your answers on the blank line under each **Answer:**, or fill in the table
 
 | Situation | Status code |
 |---|---|
-| The page loaded fine | |
-| You typed a page name that does not exist | |
-| Something broke on the server | |
+| The page loaded fine | 200 |
+| You typed a page name that does not exist | 404 |
+| Something broke on the server | 500 |
 
 **g.** A website has a login form but uses `http://` instead of `https://`. What is the risk? What would the browser show?
 
 **Answer:**
 
+Anyone could read your password, the browser should show "Not secure'
 
 **h.** What do SSL and TLS have to do with HTTPS? Which one is newer?
 
 **Answer:**
 
+    SSL and TLS are the certificates that make sure a website is what is says it is.
+
+    The newer one is TLS
 
 ## 5. FTP
 

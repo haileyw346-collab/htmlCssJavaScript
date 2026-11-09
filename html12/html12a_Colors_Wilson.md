@@ -108,7 +108,7 @@ body {
 
 **Answer:**
 
-    The colors have a similar value, so they are hard to distinguish. 
+    The colors don't contrast much, so they are hard to distinguish. 
     I would change one of them to a darker color to make them have more contrast.
 
 ## 5. Your own site
