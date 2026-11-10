@@ -1,15 +1,9 @@
 *{
-    /* outline: 2px dashed #ff0000; */
+    outline: 2px dashed #ff0000;
     box-sizing: border-box;
 }
 
-#promo video{
-    border: 5px solid;
-    border-radius: 5px;
-    width: 100%;
-    max-width: fit-content;
-    max-height: fit-content;
-}
+
 body {
     font-family: "Dongle", sans-serif;
     font-size: 2rem;
@@ -40,6 +34,7 @@ header{
 header nav{
     display: flex;
     gap: 1rem;
+    margin-right: 4rem;
 }
 
 article{
@@ -67,9 +62,9 @@ nav a{
     text-decoration: none;
     display: inline-block;
     padding: 0.5rem 1rem;
-    margin-right: 0.5rem;
     border: 5px solid;
     border-radius: 4px;
+    margin-right: .5rem;
 }
 
 table img{
@@ -110,6 +105,47 @@ button{
     left:1rem;
 }
 
+#Gallery{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    border: 5px solid ;
+    border-radius: 5px;
+    width:25rem;
+
+}
+
+.card div{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+figure img{
+    max-width: 250px;
+}
+
+
+figure, .card p{
+    margin: 0;
+}
+
+.card p{
+    align-self: center;
+    text-align: center;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.card h2{
+    margin: 5px;
+    text-align: center;
+}
 
 @media (max-width: 785px){
     header {
@@ -120,6 +156,17 @@ button{
     header nav {
         flex-wrap:wrap;
         align-items: center;
+        margin: auto;
+    }
+
+    .card{
+        width: 31.25rem;
+        margin: 1rem auto;
+        height: auto;
+    }
+
+    #Gallery{
+        display: block;
     }
 }
 
@@ -135,16 +182,9 @@ body#light, #dark header{
     color: #001986;
 }
 
-#light table, #light th, #light td, #light #promo video{
+#light .card{
     border-color: #001986;
-}
-
-#light th{
     background-color:#1aabff;
-}
-
-#light td{
-    background-color:#49bcff;
 }
 
 body#dark, #light header{
@@ -158,14 +198,8 @@ body#dark, #light header{
     color: #006c8d;
 }
 
-#dark table, #dark th, #dark td, #dark #promo video{
-    border-color: #002bb9;
+#dark .card{
+    border-color: #0366b6;
+    background-color:#2203ac;
 }
 
-#dark th{
-    background-color:#2803ac;
-}
-
-#dark td{
-    background-color: #1d167e;
-}
